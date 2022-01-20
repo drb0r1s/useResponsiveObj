@@ -148,4 +148,31 @@ const myArrayBreakpoints = useMemo(() => {
 # Examples
 - The following *examples* may help to better understand how this *React hook* works.
 
-## 
+## Display text (Default Breakpoints Object)
+- The following example shows how it is possible to *change the content of the h1* element based on **different breakpoints**, which are defined in the *Default Breakpoints object*.
+
+```js
+import React, { useMemo } from "react"
+import ReactDOM from "react-dom"
+import useResponsiveObj from "use-responsive-obj/useResponsiveObj"
+
+const App = () => {
+   const displaySize = useMemo(() => {
+      return {
+         xxs: "Small screen",
+         xs: "Mobile",
+         sm: "Tablet",
+         md: "Laptop",
+         lg: "Desktop",
+         xl: "Large screen",
+         xxl: "TV"
+      };
+   }, []);
+   
+   const { responsive } = useResponsiveObj(displaySize); 
+   
+   return <h1>Display size: {responsive}</h1>;
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
+```
