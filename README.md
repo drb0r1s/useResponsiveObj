@@ -152,9 +152,9 @@ const myArrayBreakpoints = useMemo(() => {
 - The following example shows how it is possible to *change the content of the h1* element based on **different breakpoints**, which are defined in the *Default Breakpoints object*.
 
 ```js
-import React, { useMemo } from "react"
-import ReactDOM from "react-dom"
-import useResponsiveObj from "use-responsive-obj/useResponsiveObj"
+import React, { useMemo } from "react";
+import ReactDOM from "react-dom";
+import useResponsiveObj from "use-responsive-obj/useResponsiveObj";
 
 const App = () => {
    const displaySize = useMemo(() => {
@@ -172,6 +172,41 @@ const App = () => {
    const { responsive } = useResponsiveObj(displaySize); 
    
    return <h1>Display size: {responsive}</h1>;
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
+```
+
+## Canvas size (Default Breakpoints Object)
+- This *React hook* can be quite useful in this example. Based on the Responsive object *(responsiveCanvas)*, the width and height of the canvas can be changed. The React hook uses the *"responsive" constant* **to return the object that corresponds to the current breakpoint (Default Breakpoints object)**. With object gain we can easily change the *width* and *height* of the canvas depending on the *current breakpoint*.
+
+```js
+import React, { useMemo } from "react";
+import ReactDOM from "react-dom";
+import useResponsiveObj from "use-responsive-obj/useResponsiveObj";
+
+const App = () => {
+   const responsiveCanvas = useMemo(() => {
+      return {
+         xxs: { width: "220", height: "200" },
+         xs: { width: "350", height: "250" },
+         sm: { width: "500", height: "270" },
+         md: { width: "850", height: "300" },
+         lg: { width: "1100", height: "350" },
+         xl: { width: "1300", height: "400" },
+         xxl: { width: "1500", height: "500" }
+      };
+   }, []);
+   
+   const { responsive } = useResponsiveObj(responsiveCanvas); 
+   
+   return(
+      <canvas
+         width={responsive ? responsive.width : "100"}
+         height={responsive ? responsive.height : "100"}
+         style={{ border: "1px solid black" }}
+      ></canvas>
+   );
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
