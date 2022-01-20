@@ -244,7 +244,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
 ## Change Components (Custom Breakpoints Object)
-- **Components** can also be changed in this way. Based on the *Custom Breakpoints object*, depending on the current screen width, different components will be displayed depending on what it is intended for *(<Mobile /> and <Desktop />)*.
+- **Components** can also be changed in this way. Based on the *Custom Breakpoints object*, depending on the current screen width, different components will be displayed depending on what it is intended for *(Mobile and Desktop)*.
 
 ```js
 import React, { useMemo } from "react";
