@@ -11,6 +11,9 @@
    - [Responsive Object](https://github.com/drb0r1s/useResponsiveObj#responsive-object)
    - [Breakpoints Object](https://github.com/drb0r1s/useResponsiveObj#breakpoints-object)
       - [Default Breakpoints Object](https://github.com/drb0r1s/useResponsiveObj#default-breakpoints-object)
+      - [Custom Breakpoints Object](https://github.com/drb0r1s/useResponsiveObj#custom-breakpoints-object)
+         - [Standard](https://github.com/drb0r1s/useResponsiveObj#standard)
+         - [Array](https://github.com/drb0r1s/useResponsiveObj#array)
 - [Examples](https://github.com/drb0r1s/useResponsiveObj#examples)
 
 # About useResponsiveObj
