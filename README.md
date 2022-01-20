@@ -211,3 +211,34 @@ const App = () => {
 
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
+
+## Appearance Of Text (Custom Breakpoints Object)
+- In this example you can see the *definition and use* of the **Custom Breakpoints object**. Because custom breakpoints are used, **the key names in the Responsive object need to be the same as the key names in the Custom Breakpoints object**. Also in this example we can see how breakpoint dimensions can be defined *using arrays*. The first array index is the *minimum*, and the second is the *maximum* value in **pixels**. If it is not necessary to define the maximum width (as in the example), **false** is used instead of the number.
+
+```js
+import React, { useMemo } from "react";
+import ReactDOM from "react-dom";
+import useResponsiveObj from "use-responsive-obj/useResponsiveObj";
+
+const App = () => {
+   const showText = useMemo(() => {
+      return {
+         mobileAndTablet: "This text will appear on mobile and tablet",
+         desktopAndLargeScreen: "This text will appear on desktop and large screen"
+      };
+   }, []);
+   
+   const myBreakpoints = useMemo(() => {
+      return {
+         mobileAndTablet: [320, 768],
+         desktopAndLargeScreen: [769, false]
+      };
+   }, []);
+   
+   const { responsive } = useResponsiveObj(showText, myBreakpoints); 
+   
+   return <h1>{responsive}</h1>;
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
+```
