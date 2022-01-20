@@ -145,6 +145,20 @@ const myArrayBreakpoints = useMemo(() => {
 }, []);
 ```
 
+## Responsive Object && Breakpoints Object
+- As already explained, *the Responsive object and the Breakpoints object are related*.
+- In order for the React hook to function normally, **it is necessary that the Responsive object and the Breakpoints object have keys with the same names**. The reason for this is explained in [functionality](https://github.com/drb0r1s/useResponsiveObj#functionality).
+
+**IMPORTANT:** For the best possible experience when using **useResponsiveObj**, it is necessary that the **Responsive object** and the **Breakpoints object** be within the **useMemo** hook.
+
+*Example:*
+
+```js
+const object = useMemo(() => {
+   return {...};
+}, []);
+```
+
 # Examples
 - The following *examples* may help to better understand how this *React hook* works.
 
