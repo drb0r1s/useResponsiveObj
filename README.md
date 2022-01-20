@@ -98,13 +98,34 @@ The **dimensions of the breakpoint** in this type of object can be defined in *t
 ```js
 const myStandardBreakpoints = useMemo(() => {
    return {
-      xxs: "(max-width: 319px)",
-      xs: "(min-width: 320px) and (max-width: 480px)",
-      sm: "(min-width: 481px) and (max-width: 768px)",
-      md: "(min-width: 769px) and (max-width: 1024px)",
-      lg: "(min-width: 1025px) and (max-width: 1200px)",
-      xl: "(min-width: 1201px) and (max-width: 1699px)",
-      xxl: "(min-width: 1700px)"
+      small: "(max-width: 319px)",
+      mobile: "(min-width: 320px) and (max-width: 480px)",
+      tablet: "(min-width: 481px) and (max-width: 768px)",
+      laptop: "(min-width: 769px) and (max-width: 1024px)",
+      desktop: "(min-width: 1025px) and (max-width: 1200px)",
+      large: "(min-width: 1201px) and (max-width: 1699px)",
+      tv: "(min-width: 1700px)"
+   };
+}, []);
+```
+
+### Array
+- An *easier way* to define a *Custom Breakpoints object* is by **using arrays**.
+- Defining is done by entering the value of the object as \[min-width, max-width\] *without px*.
+**- If only the minimum or maximum width needs to be entered, then false is used instead of the unnecessary width.**
+
+*Example:*
+
+```js
+const myArrayBreakpoints = useMemo(() => {
+   return {
+      small: [false, 319],
+      mobile: [320, 480],
+      tablet: [481, 768],
+      laptop: [769, 1024],
+      desktop: [1025, 1200],
+      large: [1201, 1699],
+      tv: [1700, false]
    };
 }, []);
 ```
