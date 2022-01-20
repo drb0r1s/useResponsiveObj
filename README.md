@@ -37,7 +37,7 @@ npm i use-responsive-obj
 - After installing this React hook, it is necessary to add it to the code:
 
 ```js
-import useResponsiveObj from "use-responsive-obj/useResponsiveObj"
+import useResponsiveObj from "use-responsive-obj"
 ```
 
 # Usage
@@ -171,7 +171,7 @@ const object = useMemo(() => {
 ```js
 import React, { useMemo } from "react";
 import ReactDOM from "react-dom";
-import useResponsiveObj from "use-responsive-obj/useResponsiveObj";
+import useResponsiveObj from "use-responsive-obj";
 
 const App = () => {
    const displaySize = useMemo(() => {
@@ -200,7 +200,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 ```js
 import React, { useMemo } from "react";
 import ReactDOM from "react-dom";
-import useResponsiveObj from "use-responsive-obj/useResponsiveObj";
+import useResponsiveObj from "use-responsive-obj";
 
 const App = () => {
    const responsiveCanvas = useMemo(() => {
@@ -235,7 +235,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 ```js
 import React, { useMemo } from "react";
 import ReactDOM from "react-dom";
-import useResponsiveObj from "use-responsive-obj/useResponsiveObj";
+import useResponsiveObj from "use-responsive-obj";
 
 const App = () => {
    const showText = useMemo(() => {
@@ -266,7 +266,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 ```js
 import React, { useMemo } from "react";
 import ReactDOM from "react-dom";
-import useResponsiveObj from "use-responsive-obj/useResponsiveObj";
+import useResponsiveObj from "use-responsive-obj";
 
 const App = () => {
    const resolution = useMemo(() => {
