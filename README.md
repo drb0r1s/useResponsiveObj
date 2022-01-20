@@ -32,7 +32,15 @@ import useResponsiveObj from "use-responsive-obj/useResponsiveObj"
 
 # Usage
 
-- **useResponsiveObj** consists of *Responsive Object* and *Breakpoints Object* (*default breakpoints* / *custom breakpoints*).
+- When defining **useResponsiveObj**, *2 parameters* can be entered *(responsive object and custom breakpoints object)*. Of which the **responsive object is mandatory**.
+
+```js
+const { responsive } = useResponsiveObj(object, customBreakpoints);
+```
+
+- After defining this hook, the value **"responsive"** is obtained, this value is obtained as the *key value of the current breakpoint*, obtained from the *responsive object*.
+
+- As mentioned, **useResponsiveObj** consists of *Responsive Object* and *Breakpoints Object* (*default breakpoints* / *custom breakpoints*).
 
 ## Responsive Object
 - The **Responsive object** is the main thing that *must be defined* when using this hook.
