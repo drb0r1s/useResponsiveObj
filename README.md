@@ -242,3 +242,50 @@ const App = () => {
 
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
+
+## Change Components (Custom Breakpoints Object)
+- **Components** can also be changed in this way. Based on the *Custom Breakpoints object*, depending on the current screen width, different components will be displayed depending on what it is intended for *(<Mobile /> and <Desktop />)*.
+
+```js
+import React, { useMemo } from "react";
+import ReactDOM from "react-dom";
+import useResponsiveObj from "use-responsive-obj/useResponsiveObj";
+
+const App = () => {
+   const resolution = useMemo(() => {
+      return {
+         mobile: <Mobile />,
+         desktop: <Desktop />
+      };
+   }, []);
+   
+   const myBreakpoints = useMemo(() => {
+      return {
+         mobile: [false, 480],
+         desktop: [481, false]
+      };
+   }, []);
+   
+   const { responsive } = useResponsiveObj(resolution, myBreakpoints); 
+   
+   return <>{responsive}</>;
+}
+
+const Mobile = () => {
+   return(
+      <div className="mobile">
+         <h1>Mobile Resolution</h1>
+      </div>
+   );
+}
+
+const Desktop = () => {
+   return(
+      <div className="desktop">
+         <h1>Desktop Resolution</h1>
+      </div>
+   );
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
+```
