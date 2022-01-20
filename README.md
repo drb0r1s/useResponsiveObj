@@ -16,6 +16,8 @@
          - [Array](https://github.com/drb0r1s/useResponsiveObj#array)
 - [Examples](https://github.com/drb0r1s/useResponsiveObj#examples)
 - [Functionality](https://github.com/drb0r1s/useResponsiveObj#functionality)
+- [Author](https://github.com/drb0r1s/useResponsiveObj#author)
+- [Help](https://github.com/drb0r1s/useResponsiveObj#help)
 
 # About useResponsiveObj
 
@@ -308,3 +310,13 @@ ReactDOM.render(<App />, document.getElementById("root"));
 # Functionality
 
 How the **useResponsiveObj** React hook works can be explained as follows. After defining the *hook* and *Responsive object*, a function is run that checks whether the **default** or **custom** *Breakpoints object* is used. After determining the *breakpoint*, a check begins which breakpoint corresponds to the current screen width. When the appropriate breakpoint is found, it is checked whether the *Responsive object* has a key with the same name that has the *breakpoint currently active*. If there is **no key** with the same name, the returned value is **false**. However, if **there is a key** in the entered object that is the same as the key that has the breakpoint, then the *Responsive value of the object located on that key is returned*. The **"responsive"** constant has a return value of the hook and it is used for further work.
+
+# Author
+
+**drb0r1s**
+
+*Github:* **drb0r1s**
+*Discord:* **boris**#1171
+
+# Help
+If you have a *question* or *need help* with **useResponsiveObj**, you can contact the [**author**](https://github.com/drb0r1s).
