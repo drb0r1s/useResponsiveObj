@@ -15,6 +15,7 @@
          - [Standard](https://github.com/drb0r1s/useResponsiveObj#standard)
          - [Array](https://github.com/drb0r1s/useResponsiveObj#array)
 - [Examples](https://github.com/drb0r1s/useResponsiveObj#examples)
+- [Functionality](https://github.com/drb0r1s/useResponsiveObj#functionality)
 
 # About useResponsiveObj
 
@@ -145,7 +146,7 @@ const myArrayBreakpoints = useMemo(() => {
 }, []);
 ```
 
-## Responsive Object && Breakpoints Object
+## Responsive Object & Breakpoints Object
 - As already explained, *the Responsive object and the Breakpoints object are related*.
 - In order for the React hook to function normally, **it is necessary that the Responsive object and the Breakpoints object have keys with the same names**. The reason for this is explained in [functionality](https://github.com/drb0r1s/useResponsiveObj#functionality).
 
@@ -303,3 +304,7 @@ const Desktop = () => {
 
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
+
+# Functionality
+
+How the **useResponsiveObj** React hook works can be explained as follows. After defining the *hook* and *Responsive object*, a function is run that checks whether the **default** or **custom** *Breakpoints object* is used. After determining the *breakpoint*, a check begins which breakpoint corresponds to the current screen width. When the appropriate breakpoint is found, it is checked whether the *Responsive object* has a key with the same name that has the *breakpoint currently active*. If there is **no key** with the same name, the returned value is **false**. However, if **there is a key** in the entered object that is the same as the key that has the breakpoint, then the *Responsive value of the object located on that key is returned*. The **"responsive"** constant has a return value of the hook and it is used for further work.
