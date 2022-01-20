@@ -112,7 +112,7 @@ const myStandardBreakpoints = useMemo(() => {
 ### Array
 - An *easier way* to define a *Custom Breakpoints object* is by **using arrays**.
 - Defining is done by entering the value of the object as \[min-width, max-width\] *without px*.
-**- If only the minimum or maximum width needs to be entered, then false is used instead of the unnecessary width.**
+- **If only the minimum or maximum width needs to be entered, then false is used instead of the unnecessary width.**
 
 *Example:*
 
