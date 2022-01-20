@@ -8,6 +8,10 @@
 - [About *useResponsiveObj*](https://github.com/drb0r1s/useResponsiveObj#about)
 - [Installation](https://github.com/drb0r1s/useResponsiveObj#installation)
 - [Usage](https://github.com/drb0r1s/useResponsiveObj#usage)
+   - [Responsive Object](https://github.com/drb0r1s/useResponsiveObj#responsive-object)
+   - [Breakpoints Object](https://github.com/drb0r1s/useResponsiveObj#breakpoints-object)
+      - [Default Breakpoints Object](https://github.com/drb0r1s/useResponsiveObj#default-breakpoints-object)
+- [Examples](https://github.com/drb0r1s/useResponsiveObj#examples)
 
 # About useResponsiveObj
 
@@ -117,7 +121,7 @@ const myStandardBreakpoints = useMemo(() => {
 }, []);
 ```
 
-### Array
+#### Array
 - An *easier way* to define a *Custom Breakpoints object* is by **using arrays**.
 - Defining is done by entering the value of the object as \[min-width, max-width\] *without px*.
 - **If only the minimum or maximum width needs to be entered, then false is used instead of the unnecessary width.**
@@ -137,3 +141,8 @@ const myArrayBreakpoints = useMemo(() => {
    };
 }, []);
 ```
+
+# Examples
+- The following *examples* may help to better understand how this *React hook* works.
+
+## 
