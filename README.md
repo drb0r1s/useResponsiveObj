@@ -4,7 +4,7 @@
    <a href="https://www.npmjs.com/package/use-responsive-obj"><img src="https://img.shields.io/npm/v/use-responsive-obj.svg?maxAge=3600" alt="NPM version"></a>
    <a href="https://www.npmjs.com/package/use-responsive-obj"><img src="https://img.shields.io/npm/dt/use-responsive-obj.svg?maxAge=3600" alt="NPM downloads"></a><br />
    
-   <a href="https://nodei.co/npm/use-responsive-obj"><img src="https://nodei.co/npm/discbot-easy.png" alt="npm installnfo"></a>
+   <a href="https://nodei.co/npm/use-responsive-obj"><img src="https://nodei.co/npm/use-responsive-obj.png" alt="npm installnfo"></a>
 </div>
 
 # useResponsiveObj
