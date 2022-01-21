@@ -1,5 +1,10 @@
 <div align="center">
-   <img src="https://i.imgur.com/MIi5AOX.png" alt="useResponsiveObj"></img>
+   <img src="https://i.imgur.com/MIi5AOX.png" alt="useResponsiveObj"></img><br />
+   
+   <a href="https://www.npmjs.com/package/use-responsive-obj"><img src="https://img.shields.io/npm/v/use-responsive-obj.svg?maxAge=3600" alt="NPM version"></a>
+   <a href="https://www.npmjs.com/package/use-responsive-obj"><img src="https://img.shields.io/npm/dt/use-responsive-obj.svg?maxAge=3600" alt="NPM downloads"></a><br />
+   
+   <a href="https://nodei.co/npm/use-responsive-obj"><img src="https://nodei.co/npm/discbot-easy.png" alt="npm installnfo"></a>
 </div>
 
 # useResponsiveObj
