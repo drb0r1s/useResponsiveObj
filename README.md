@@ -321,8 +321,8 @@ How the **useResponsiveObj** React hook works can be explained as follows. After
 **drb0r1s**
 
 *Github:* **drb0r1s**<br>
-*Discord:* **boris**#1171<br>
-*Email:* **drb0r1sdev@gmail.com**
+*Discord:* **drb0r1s**#9999<br>
+*Email:* **contact@drb0r1s.xyz**
 
 # Help
 If you have a *question* or *need help* with **useResponsiveObj**, you can contact the [**author**](https://github.com/drb0r1s).
