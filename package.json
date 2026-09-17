@@ -1,0 +1,30 @@
+{
+  "name": "@drb0r1s/use-responsive-obj",
+  "version": "1.0.0",
+  "description": "A React hook that resolves the correct value for the current breakpoint from a single responsive object, using default or custom breakpoints.",
+  "main": "useResponsiveObj.js",
+  "type": "module",
+  "files": [
+    "useResponsiveObj.js"
+  ],
+  "keywords": [
+    "react",
+    "react-hook",
+    "responsive",
+    "breakpoints",
+    "media-query",
+    "responsive-design"
+  ],
+  "author": "drb0r1s",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drb0r1s/useResponsiveObj.git"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0"
+  }
+}

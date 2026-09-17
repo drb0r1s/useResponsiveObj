@@ -36,7 +36,7 @@
 - **useResponsiveObj** is available on *Github* and *NPM*, so it's very easy to download and use.
 
 ```
-npm i use-responsive-obj
+npm i @drb0r1s/use-responsive-obj
 ```
 
 - After installing this React hook, it is necessary to add it to the code:
